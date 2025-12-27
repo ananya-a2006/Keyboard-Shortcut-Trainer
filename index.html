@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Shortcut Trainer</title>
+</head>
+<body style="text-align:center;padding-top:100px">
+
+<h3>Press Ctrl + C</h3>
+<p id="result"></p>
+
+<script>
+document.addEventListener("keydown",function(e){
+  if(e.ctrlKey && e.key==="c"){
+    document.getElementById("result").innerText="Correct Shortcut!";
+  }else{
+    document.getElementById("result").innerText="Wrong Shortcut!";
+  }
+});
+</script>
+
+</body>
+</html>
